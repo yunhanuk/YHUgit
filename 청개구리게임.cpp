@@ -29,12 +29,6 @@ private:
         return endTime - startTime > 3;
     }
 
-    void printResult(const string& result) {
-        cout << "게임에 " << result << "!" << endl;
-        cout << "게임을 새로 시작하려면 1, 종료하려면 2를 입력하세요." << endl;
-        cin >> num1;
-    }
-
     string calculateResult(const string& ai, const string& human, const string& Answer) {
         if (ai == human) {
             return (Answer == "개굴") ? "승리" : "패배";
@@ -47,6 +41,12 @@ private:
         else {
             return (Answer == "졌다") ? "승리" : "패배";
         }
+    }
+
+    void printResult(const string& result) {
+        cout << "게임에 " << result << "!" << endl;
+        cout << "게임을 새로 시작하려면 1, 종료하려면 2를 입력하세요." << endl;
+        cin >> num1;
     }
 
 public:
