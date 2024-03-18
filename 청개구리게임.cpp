@@ -54,7 +54,7 @@ public:
 
     void startGame() {
         while (num1 == 1) {
-            string ai = selectRandomAI(); // 새로운 가위바위보 선택
+            string ai = selectRandomAI(); 
             cout << "청개구리 가위, 바위, 보를 시작합니다." << endl;
             cout << "가위, 바위, 보를 입력해주세요 :" << endl;
             cin >> human;
