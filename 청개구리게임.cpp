@@ -44,7 +44,7 @@ private:
     }
 
     void printResult(const string& result) {
-        cout << "게임에 " << result << "!" << endl;
+        cout << "게임에 " << result << "하였습니다!" << endl;
         cout << "게임을 새로 시작하려면 1, 종료하려면 2를 입력하세요." << endl;
         cin >> num1;
     }
